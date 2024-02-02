@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  display: grid;
+  height: 100vh;
+  place-items: center;
+  background: linear-gradient(to right, #d79447, #35373b);
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 200;
+  padding: 5rem;
+}
+
+h2 {
+  font-size: 2.8rem;
+  margin-bottom: 1.8rem;
+}
+
+ul li {
+  list-style-type: none;
+  padding: 1.3rem 0;
+  font-size: 2.3rem;
+}
+
+.quizeApp {
+  position: relative;
+  background-color: #fff;
+  width: 55rem;
+  border-radius: 7px;
+  box-shadow: 0 10px 10px -6px rgba(0, 0, 0, 0.2);
+}
+
+input[type="radio"] {
+  margin-right: 1rem;
+  cursor: pointer;
+  background: #d79447;
+}
+
+ul li label {
+  cursor: pointer;
+}
+
+ul li{
+  border: 2px solid #d79447;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  border-radius: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quizeContent {
+  padding: 5rem;
+}
+
+.image {
+  opacity: 0.6;
+  width: 300px;
+}
+
+.btn {
+  width: 100%;
+  border: none;
+  height: 6rem;
+  font-size: 2.3rem;
+  cursor: pointer;
+  outline: none;
+  border-radius: 7px;
+  background-color: #d79447;
+  color: #fff;
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 55%;
+  }
+  .quizeApp {
+    width: calc(100% - 5%);
+  }
+  .quizeContent {
+    padding: 3rem;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  html {
+    font-size: 58%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 60%;
+  }
+  .quizeApp {
+    width: calc(100% - 30%);
+  }
+}
+
+@media screen and (min-width: 998px) {
+    html {
+        font-size: 70%;
+    }
+    .quizeApp {
+        width: calc(100% - 50%)
+    }
+}
+
+
+
+
+
+
